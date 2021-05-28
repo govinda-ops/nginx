@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: tomcat:9.0
+          image: saravak/tomcat8
           imagePullPolicy: Always
           ports:
             - name: tomcat-port
