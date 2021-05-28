@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: docker-library/tomcat
+          image: tomcat:9.0
           imagePullPolicy: Always
           ports:
             - name: tomcat-port
