@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: tomcat
@@ -16,8 +16,7 @@ spec:
     spec:
       containers:
         - name: tomcat
-          image: saravak/tomcat8
-          imagePullPolicy: Always
+          image: tomcat
           ports:
             - name: tomcat-port
               containerPort: 8080
